@@ -1,0 +1,32 @@
+body {
+    background-color: #242424;
+    font-family: 'Oswald';
+    color: white;
+}
+
+
+.titulo-indice {
+    color: #4DA3FF;
+    font-size: 50px;
+}
+
+.lista-indice{
+    font-size: 25px;
+}
+
+.li-lista-indice{
+   padding: 20px;
+   transition: all 0.3s ease-in-out;
+}
+
+.li-lista-indice:hover{
+    box-shadow: 0 0 25px 0px rgba(36, 207, 234, 0.1) ;
+    border-radius: 100px;
+    transform: scale(1.1);
+
+}
+
+.titulo-2{
+    font-size: 60px;
+
+}
