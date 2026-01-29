@@ -7,21 +7,138 @@
     <link rel="stylesheet" href="/css_scss/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <title>NBA Web</title>
+
+    <style>
+        body,html{
+            scroll-snap-type: y mandatory !important;
+        }
+    
+
+    </style>
 </head>
 <body>
-    
-    <section style="background-image: url('./assets/img/fondo2.webp'); background-repeat: no-repeat; background-position: center; min-height: 100vh; background-size: cover;  ">
+    <div class="container">
+    <nav style="scroll-snap-align: start;">
+        <ul class="nav-ul">
+            <li class="nav-li"><a href="/" class="nav-a">Índice</a></li>
+            <li class="nav-li"><a href="conferencias.html" class="nav-a">Conferencias</a></li>
+            <li class="nav-li"><a href="#" class="nav-a">Jugadores Historicos</a></li>
+            <li class="nav-li"><a href="#" class="nav-a">Historia de la NBA</a></li>
+        </ul>
+    </nav>
+
+    <div style="display: flex;flex-direction: column; justify-content: center; ; align-items: center; gap: 100px; min-height: 100vh;">
+        <h1 class="titulo-h1">Mejores equipos de la NBA</h1>
+        <a href="#Lakers" class="a-img"><img src="assets/img/nba-logo.png" alt="logo-nba" width="500px" style="border-radius: 20px;"></a>
+    </div>
+
+    <section style="display: flex;  justify-content: space-between; align-items: center; margin: 200px;" id="Lakers">
         
-        <h2 style="display: flex; justify-content:   center;align-items: center; height: 100vh;" class="titulo-2">Equipos mas destacados de la NBA</h2>
+        <div>
+            <h2 class="titulo-h2">1. Los Angeles Lakers</h2>
 
-        <a href=""></a>
+            <p style="max-width: 500px;">Los Lakers son uno de los equipos más exitosos en la historia de la NBA con 17 campeonatos. Fundados en 1947, han sido hogar de leyendas como Magic Johnson, Kareem Abdul-Jabbar y Kobe Bryant.</p>
 
+            <h3 class="titulo-h3"><i>Jugadores Destacables:</i></h2>
+            <ul>
+                <li><span style="color: #2f016e;">LeBron James</span> - Una de las mayores leyendas del baloncesto</li>
+                <li><span style="color: #f7be30;">Anthony Davis</span> - Pivote dominante en ambos lados de la cancha</li>
+                <li><span style="color: #2f016e;">Austin Reaves</span> - Joven talento en ascenso</li>
+            </ul>
+        </div>
+
+        <div>
+            <img src="assets/img/lakers.webp" alt="Lakers.png" width="500px" style="border-radius: 20px;">
+        </div>
     </section>
 
-    <section id="Equipos">
+    <section style="display: flex;  justify-content: space-between; align-items: center; margin: 200px;">
+        
+        <div>
+            <img src="assets/img/Boston.jpg" alt="Boston.jpg" width="500px" style="border-radius: 20px;">
+        </div>
+ 
+        <div>
+            <h2 class="titulo-h2">2. Boston Celtics</h2>
 
+            <p style="max-width: 500px;">Los Celtics tienen el récord de más campeonatos de la NBA con 18 títulos. Son conocidos por su histórica rivalidad con los Lakers y por leyendas como Bill Russell, Larry Bird y Paul Pierce.</p>
+
+            <h3 class="titulo-h3"><i>Jugadores Destacables:</i></h2>
+            <ul>
+                <li><span style="color: #047734;">Jayson Tatum</span> - Estrella y líder del equipo</li>
+                <li><span style="color: #fafcfb;">Jaylen Brown</span> - Escolta All-Star de élite</li>
+                <li><span style="color: #047734;">Kristaps Porzingis</span> - Pivote versátil con gran tiro exterior</li>
+            </ul>
+        </div>
+ 
     </section>
-    
+
+        <section style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 50px; text-align: center;">
+        
+        <div>
+            <h2 class="titulo-h2">3. Chicago Bulls</h2>
+
+            <p style="max-width: 500px;">Los Bulls dominaron la NBA en los años 90 con Michael Jordan, ganando 6 campeonatos. Su dinastía con Jordan, Pippen y Rodman es considerada una de las mejores de todos los tiempos.</p>
+
+            <h3 class="titulo-h3"><i>Jugadores Destacables:</i></h2>
+            <ul style="list-style: none;">
+                <li><span style="color: #b80026;">Zach LaVine</span> - Escolta explosivo y gran anotador</li>
+                <li><span style="color: #fafcfb;">DeMar DeRozan</span> - Veterano All-Star</li>
+                <li><span style="color: #b80026;">Nikola Vucevic</span> - Pivote sólido con buen tiro</li>
+            </ul>
+        </div>
+
+        <div>
+            <img src="assets/img/chicago.png" alt="Chicago.png" width="400px" style="border-radius: 20px;">
+        </div>
+ 
+
+ 
+    </section>
+
+    <section style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 50px; text-align: center;">
+        
+        <div>
+            <h2 class="titulo-h2">4. Golden State Warriors</h2>
+
+            <p style="max-width: 500px;">Los Warriors revolucionaron el baloncesto moderno con su estilo de juego basado en el triple. Han ganado 7 campeonatos en total, incluyendo 4 en la última década con Stephen Curry.</p>
+
+            <h3 class="titulo-h3"><i>Jugadores Destacables:</i></h2>
+            <ul style="list-style: none;">
+                <li><span style="color: #01408d;">Stephen Curry</span> - El mejor tirador de triples en la historia</li>
+                <li><span style="color: #ffb902;">Klay Thompson</span> - Escolta defensivo y gran tirador</li>
+                <li><span style="color: #01408d;">Draymond Green</span> - Líder defensivo y corazón del equipo</li>
+            </ul>
+        </div>
+
+        <div>
+            <img src="assets/img/warriors.jpg" alt="Warriors.png" width="400px" style="border-radius: 20px;">
+        </div>
+ 
+ 
+    </section>
+
+    <section style="display: flex;  justify-content: space-between; align-items: center; margin: 200px;">
+        
+        <div>
+            <h2 class="titulo-h2">5. San Antonio Spurs</h2>
+
+            <p style="max-width: 500px;">Los Spurs son conocidos por su consistencia y excelencia durante más de 20 años bajo el mando del entrenador Gregg Popovich. Han ganado 5 campeonatos con Tim Duncan como su líder histórico.</p>
+
+            <h3 class="titulo-h3"><i>Jugadores Destacables:</i></h2>
+            <ul>
+                <li><span style="color: black;">Victor Wembanyama</span> - Fenómeno francés de 2.24m, futuro de la NBA</li>
+                <li><span style="color: grey;">Devin Vassell</span> - Escolta joven con gran potencial</li>
+                <li><span style="color: black;">Keldon Johnson</span> - Keldon Johnson - Alero versátil y enérgico</li>
+            </ul>
+        </div>
+
+        <div>
+            <img src="assets/img/spurs.webp" alt="Spurs.webp" width="400px" style="border-radius: 20px;">
+        </div>
+ 
+    </section>
+    </div>
 
 </body>
 </html>
