@@ -7,14 +7,27 @@
     <link rel="stylesheet" href="/css_scss/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <title>NBA Web</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            }
+    </style>
 </head>
 <body>
-    <nav>
+    
+    <nav style="display: flex; padding: 20px;">
+        
+        <div style="justify-content: start;">
+            <a href="/"><img src="assets/img/nba-logo.png" alt="nba-logo.png" width="100px" style="border-radius: 100px;"></a>
+        </div>
+
         <ul class="nav-ul">
-            <li class="nav-li"><a href="/" class="nav-a">Índice</a></li>
             <li class="nav-li"><a href="/equipos.html" class="nav-a">Mejores equipos de la NBA</a></li>
-            <li class="nav-li"><a href="#" class="nav-a">Jugadores Historicos</a></li>
-            <li class="nav-li"><a href="#" class="nav-a">Historia de la NBA</a></li>
+            <li class="nav-li"><a href="/conferencias.html" class="nav-a">Conferencias</a></li>
+            <li class="nav-li"><a href="/jugadores.html" class="nav-a">Jugadores Historicos</a></li>
+            <li class="nav-li"><a href="/historia.html" class="nav-a">Historia de la NBA</a></li>
         </ul>
     </nav>
 
@@ -48,15 +61,48 @@
         </div>
     </section>
 
-    <section id="eastern" style="display: flex; justify-content: center;">
+    <section id="eastern" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
 
         <h2 class="titulo-h2">Eastern Conference</h2>
+        <p><span style="color: #1d428a; font-size: 20px;">Conferencia Este:</span> Compuesta por las divisiones Atlántico, Central y Sureste. Es la casa de franquicias históricas como los Boston Celtics y los Chicago Bulls.</p>
+        <img src="assets/img/eastern-foto.jpg" alt="eastern-foto.jpg" width="1000px" style="border-radius: 20px;">
 
-        <div>
-            <p></p>
-        </div>
+    </section>
+
+    
+    <section id="western" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+
+        <h2 class="titulo-h2">Western Conference</h2>
+        <p><span style="color: #c9072a; font-size: 20px;">Conferencia Oeste:</span>Compuesta por las divisiones Noroeste, Pacífico y Suroeste. Es conocida como la conferencia más competitiva de las últimas décadas, liderada por equipos como Los Angeles Lakers y Golden State Warriors.</p>
+        <img src="assets/img/Western-foto.jpg" alt="Western-foto.jpg" width="1000px" style="border-radius: 20px;">
 
     </section>
     
+    <section>
+        
+        <h2 class="titulo-h2" style="display: flex; justify-content: center;">Tablas Actualizadas</h2>
+        
+        <div style="display: flex; justify-content: space-between; margin-right: 50px;margin-left: 50px;">
+            <div style="justify-items: center;">
+                <h3 class="titulo-h3">Eastern Conference</h3>
+                <iframe src="https://widgets.sofascore.com/es-ES/embed/tournament/177/season/80229/standings/NBA%20Eastern%20Conference?widgetTitle=NBA%20Eastern%20Conference&showCompetitionLogo=true" style="height: 600px; width: 800px; "; frameborder="0" scrolling="yes"></iframe>
+                <div style="font-size:12px;font-family:Arial,sans-serif;text-align:left"></div>
+            </div>
+
+            <div style="justify-items: center;">
+                <h3 class="titulo-h3">Eastern Conference</h3>
+                <iframe src="https://widgets.sofascore.com/es-ES/embed/tournament/177/season/80229/standings/NBA%20Western%20Conference?widgetTitle=NBA%20Western%20Conference&showCompetitionLogo=true" style="height: 600px; width: 800px;"; frameborder="0" scrolling="no"></iframe>
+                <div style="font-size:12px;font-family:Arial,sans-serif;text-align:left">
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer style="background-color: #1a1a1a; color: #ffffff; padding: 40px 20px; text-align: center;">
+            <p style=" font-size: 16px;">© 2026 NBA WEB. Todos los derechos reservados.</p>
+            <p style="font-size: 14px; color: #888;">Diseñado por Gonzalo Gámez Cabral</p>
+    </footer>
+
 </body>
 </html>
