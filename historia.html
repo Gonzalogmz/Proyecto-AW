@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gonzalo Gámez Cabral">
     <link rel="stylesheet" href="/css_scss/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <title>Document</title>
+
+    <style>
+        body, html {
+            scroll-snap-type: y mandatory !important;
+        }
+        section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+        }
+    </style>
 </head>
 <body>
-    <nav style="display: flex; padding: 20px;">
+    <nav style="display: flex; padding: 20px; scroll-snap-align: start">
         
         <div style="justify-content: start;">
             <a href="/"><img src="assets/img/nba-logo.png" alt="nba-logo.png" width="100px" style="border-radius: 100px;"></a>
@@ -21,6 +34,94 @@
             <li class="nav-li"><a href="/historia.html" class="nav-a">Historia de la NBA</a></li>
         </ul>
     </nav>
+
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 50px; min-height: 100vh; scroll-snap-align: start; text-align: center;">
+        <h1 class="titulo-h1" style="font-size: 4rem;">La Evolución de la NBA</h1>
+        <p style="max-width: 600px; font-size: 1.2rem;">Desde sótanos de hockey hasta el espectáculo más grande del mundo. Repasamos los hitos que forjaron la liga.</p>
+        <img src="assets/img/nba-logo.png" alt="logo-nba" width="300px" style="border-radius: 20px;">
+    </div>
+
+    <section style="justify-content: space-between;" id="Origen">
+        <div style="max-width: 550px;">
+            <h2 class="titulo-h2">1. 1946: El Salto Inicial</h2>
+            <p>La NBA nació originalmente como la <b>BAA</b> (Basketball Association of America). Fue fundada por dueños de estadios de hockey que querían llenar sus arenas en las noches libres. En 1949, se fusionó con la NBL, dando lugar oficialmente a la National Basketball Association.</p>
+            <h3 class="titulo-h3"><i>Hitos Clave:</i></h3>
+            <ul>
+                <li><span style="color: #1d428a;">Fusión BAA-NBL:</span> El nacimiento de la estructura actual.</li>
+                <li><span style="color: #ce1141;">Primer Partido:</span> Knicks vs Huskies en Toronto.</li>
+                <li><span style="color: #1d428a;">Equipos Originales:</span> Celtics y Knicks son los únicos que no se han movido de ciudad.</li>
+            </ul>
+        </div>
+        <div>
+            <img src="assets/img/nba-retro.jpg" alt="NBA Retro" width="500px" style="border-radius: 20px; box-shadow: 0 0 20px rgba(255,255,255,0.1);">
+        </div>
+    </section>
+
+    <section style="justify-content: space-between; background-color: #141414;">
+        <div>
+            <img src="assets/img/reloj_24.jpg" alt="Reloj 24" width="500px" style="border-radius: 20px;">
+        </div>
+        <div style="max-width: 550px;">
+            <h2 class="titulo-h2">2. 1954: El Reloj de 24"</h2>
+            <p>La liga estuvo a punto de desaparecer por el aburrimiento: los equipos se pasaban el balón sin tirar para agotar el tiempo. Danny Biasone inventó el reloj de 24 segundos, obligando a los equipos a atacar. El ritmo de anotación subió instantáneamente y el público regresó a las gradas.</p>
+            <h3 class="titulo-h3"><i>Impacto Directo:</i></h3>
+            <ul>
+                <li><span style="color: #ff6b00;">Más Puntos:</span> La media subió de 79 a 93 puntos por partido.</li>
+                <li><span style="color: #fafcfb;">Velocidad:</span> Nació el baloncesto de contraataque.</li>
+                <li><span style="color: #ff6b00;">Dinámica:</span> Se acabó el juego estático y aburrido.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section style="justify-content: space-between;">
+        <div style="max-width: 550px;">
+            <h2 class="titulo-h2">3. Los 80: Magic vs Bird</h2>
+            <p>La llegada de <b>Magic Johnson</b> (Lakers) y <b>Larry Bird</b> (Celtics) salvó a la NBA de una crisis financiera y de drogas. Su rivalidad no solo fue deportiva, sino cultural, llevando a la liga a la televisión nacional y aumentando los salarios y la fama de los jugadores.</p>
+            <h3 class="titulo-h3"><i>Legado Eterno:</i></h3>
+            <ul>
+                <li><span style="color: #552583;">Showtime Lakers:</span> El estilo visual y alegre de Los Ángeles.</li>
+                <li><span style="color: #007a33;">Orgullo Celtic:</span> La disciplina y dureza de Boston.</li>
+                <li><span style="color: #fdb927;">Marketing:</span> La NBA empezó a promocionar "estrellas" más que "equipos".</li>
+            </ul>
+        </div>
+        <div>
+            <img src="assets/img/magic_bird.jpg" alt="Magic vs Bird" width="500px" style="border-radius: 20px;">
+        </div>
+    </section>
+
+    <section style="justify-content: space-between; background-color: #141414;">
+        <div>
+            <img src="assets/img/dream_team.webp" alt="Dream Team" width="500px" style="border-radius: 20px;">
+        </div>
+        <div style="max-width: 550px;">
+            <h2 class="titulo-h2">4. 1992: Dominio Mundial</h2>
+            <p>Por primera vez, los profesionales de la NBA compitieron en unos Juegos Olímpicos. El <b>Dream Team</b> de Barcelona 92, con Jordan, Magic y Bird juntos, fue un fenómeno que globalizó el baloncesto. Gracias a este equipo, hoy tenemos estrellas como Doncic o Antetokounmpo en la liga.</p>
+            <h3 class="titulo-h3"><i>Consecuencias:</i></h3>
+            <ul>
+                <li><span style="color: #ce1141;">Fiebre Mundial:</span> Millones de niños fuera de EEUU empezaron a jugar.</li>
+                <li><span style="color: #fafcfb;">Mercado:</span> La NBA abrió oficinas en todo el mundo.</li>
+                <li><span style="color: #1d428a;">Talento Exterior:</span> Inicio masivo del reclutamiento internacional.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section style="justify-content: center; flex-direction: column; text-align: center;">
+        <div style="margin-bottom: 50px;">
+            <h2 class="titulo-h2">5. El Presente: Era del Triple</h2>
+            <p style="margin: 0 auto; max-width: 700px;">La analítica de datos demostró que el triple es la herramienta más eficiente. Con Stephen Curry como abanderado, el juego se ha alejado de la canasta. Los pivots ahora tiran de tres y el juego es más rápido que nunca.</p>
+        </div>
+        <div>
+            <img src="assets/img/stephen-curry.avif" alt="Stephen Curry" width="700px" style="border-radius: 20px;">
+        </div>
+        <div style="margin-top: 30px;">
+            <h3 class="titulo-h3" style="color: #fdb927;">El baloncesto hoy es: <span style="color: white;">Velocidad, Espacio y Precisión.</span></h3>
+        </div>
+    </section>
+
+    <footer>
+        <p style=" font-size: 16px;">© 2026 NBA WEB. Todos los derechos reservados.</p>
+        <p style="font-size: 14px; color: #888;">Diseñado por Gonzalo Gámez Cabral</p>
+    </footer>
 
 
 </body>

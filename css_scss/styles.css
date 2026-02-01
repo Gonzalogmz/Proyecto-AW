@@ -35,6 +35,13 @@ body,html {
 
 }
 
+footer{
+    background-color: #1a1a1a; 
+    color: #ffffff; 
+    padding: 40px 20px; 
+    text-align: center; 
+    scroll-snap-align: end;
+}
 
 nav{
     padding: 10px; 
